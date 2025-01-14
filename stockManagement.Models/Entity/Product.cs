@@ -1,0 +1,27 @@
+﻿using stockManagement.Models.Shared;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace stockManagement.Models.Entity
+{
+    public class Product : EntityParent
+    {
+        [Key]
+        [StringLength(20)]
+        public string ProductId { get; set; }
+
+        [StringLength(20, ErrorMessage = "Maximum Allowed Length for ProductName is 20")]
+        public string ProductName { get; set; }
+        [StringLength(100, ErrorMessage = "Maximum Allowed Length for Product Description is 100")]
+        public string ProductDescription { get; set; }
+        public string ProductCategory { get; set; }
+        public double Price { get; set; }
+        
+        public double Quantity { get; set; }
+
+    }
+}

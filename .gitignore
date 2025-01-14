@@ -1,0 +1,6 @@
+.vs/
+stockManagementClean.API/bin/
+stockManagementClean.Application/bin/
+stockManagementClean.Model/bin/
+stockManagementClean.Infrastructure/bin/
+

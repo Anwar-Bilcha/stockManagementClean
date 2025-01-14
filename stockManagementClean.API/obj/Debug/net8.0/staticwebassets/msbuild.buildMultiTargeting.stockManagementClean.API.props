@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\stockManagementClean.API.props" />
+</Project>
