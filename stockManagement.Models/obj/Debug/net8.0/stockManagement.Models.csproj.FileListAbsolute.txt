@@ -5,6 +5,7 @@ C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\n
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.AssemblyInfoInputs.cache
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.AssemblyInfo.cs
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.sourcelink.json
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.dll
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\refint\stockManagement.Models.dll
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.pdb

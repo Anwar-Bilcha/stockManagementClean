@@ -1,0 +1,29 @@
+2025-01-15 18:41:20.271 +03:00 [INF] Now listening on: https://localhost:7287
+2025-01-15 18:41:20.303 +03:00 [INF] Now listening on: http://localhost:5271
+2025-01-15 18:41:20.419 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-15 18:41:20.419 +03:00 [INF] Hosting environment: Development
+2025-01-15 18:41:20.419 +03:00 [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+2025-01-15 18:41:21.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+2025-01-15 18:41:21.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 212.4491ms
+2025-01-15 18:41:21.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+2025-01-15 18:41:21.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-15 18:41:21.495 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.4885ms
+2025-01-15 18:41:21.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.271ms
+2025-01-15 18:41:21.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+2025-01-15 18:41:21.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.3035ms
+2025-01-15 18:41:35.887 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7287/api/Products - application/json 213
+2025-01-15 18:41:35.893 +03:00 [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+2025-01-15 18:41:35.924 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(stockManagement.Models.StockDTO.ProductCreaUpdReqDTO) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+2025-01-15 18:41:37.056 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CreatedBy], [p].[CreatedOn], [p].[ExpiryDate], [p].[IsExpiring], [p].[Price], [p].[ProductCategory], [p].[ProductDescription], [p].[ProductName], [p].[Quantity], [p].[UpdatedBy], [p].[UpdatedOn]
+FROM [Products] AS [p]
+2025-01-15 18:41:37.125 +03:00 [ERR] Washing Machine is being registered that Expires on 1/14/0001 9:20:18 PM 
+2025-01-15 18:41:37.264 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = Double), @p6='?' (Size = 4000), @p7='?' (Size = 100), @p8='?' (Size = 20), @p9='?' (DbType = Double), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ProductId], [CreatedBy], [CreatedOn], [ExpiryDate], [IsExpiring], [Price], [ProductCategory], [ProductDescription], [ProductName], [Quantity], [UpdatedBy], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-01-15 18:41:37.280 +03:00 [INF] Executing OkObjectResult, writing value of type 'stockManagement.Models.Shared.ApiResponse`1[[stockManagement.Models.Entity.Product, stockManagement.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-15 18:41:37.291 +03:00 [INF] Executed action stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API) in 1364.7753ms
+2025-01-15 18:41:37.292 +03:00 [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+2025-01-15 18:41:37.300 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7287/api/Products - 200 null application/json; charset=utf-8 1412.9171ms

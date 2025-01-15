@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "product",
-        "Type": "stockManagement.Models.Entity.Product",
+        "Type": "stockManagement.Models.StockDTO.ProductCreaUpdReqDTO",
         "IsRequired": true
       }
     ],

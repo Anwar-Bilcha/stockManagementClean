@@ -1,4 +1,5 @@
 ﻿using stockManagement.Models.Shared;
+using stockManagement.Models.Validations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace stockManagement.Models.Entity
 {
+    [ExpiryDateValidation]
     public class Product : EntityParent
     {
         [Key]
@@ -20,7 +22,9 @@ namespace stockManagement.Models.Entity
         public string ProductDescription { get; set; }
         public string ProductCategory { get; set; }
         public double Price { get; set; }
-        
+        public bool IsExpiring { get; set; }
+        public DateTime ExpiryDate { get; set; } 
+
         public double Quantity { get; set; }
 
     }

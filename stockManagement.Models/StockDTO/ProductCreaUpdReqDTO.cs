@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace stockManagement.Models.StockDTO
 {
-    public class ProductRequestDTO
+    public class ProductCreaUpdReqDTO
     {
-        public string ProductId { get; set; }
-
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
+        public string ProductCategory { get; set; }
+        public bool IsExpiring { get; set; }
+        public DateTime ExpiryDate { get; set; } 
         public double Price { get; set; }
-
         public double Quantity { get; set; }
     }
 }

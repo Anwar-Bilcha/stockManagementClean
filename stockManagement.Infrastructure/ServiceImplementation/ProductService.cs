@@ -20,7 +20,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
             ApiResponse<Product> userResult = new();
             try
             {
-                await _context.Products.AddAsync(product);
+                 _context.Products.Add(product);
                 var result = await _context.SaveChangesAsync();
                 userResult = new();
                 userResult.errorMessage = "";
@@ -31,7 +31,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
             catch (Exception ex)
             {
                 userResult = new();
-                userResult.errorMessage = ex.Message;
+                userResult.errorMessage = ex.InnerException.Message;
                 userResult.isSuccessfullyCompleted = false;
                 userResult.Data = new();
                 return userResult;
@@ -50,7 +50,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
 
         ApiResponse<List<Product>> IProductService.GetProducts()
         {
-            throw new NotImplementedException();
+            return new ApiResponse<List<Product>>() { Data = _context.Products.ToList(), errorMessage="", isSuccessfullyCompleted = true, generatedOn = DateTime.Now };
         }
 
         Task<ApiResponse<Product>> IProductService.UpdateProductAsync(Product product)

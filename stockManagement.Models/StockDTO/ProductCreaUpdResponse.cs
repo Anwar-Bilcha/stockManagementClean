@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace stockManagement.Models.StockDTO
 {
-    public class ProductResponseDTO
+    public class ProductCreaUpdResponse
     {
         public string ProductId { get; set; }
 

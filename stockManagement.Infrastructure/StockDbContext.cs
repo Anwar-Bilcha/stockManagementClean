@@ -15,10 +15,12 @@ namespace stockManagement.Infrastructure
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+            optionsBuilder.UseSqlServer(this._configuration.GetConnectionString("DefaultConnection"));
+            
         }
         public StockDbContext(IConfiguration config, DbContextOptions<StockDbContext> options):base(options) {
             _configuration = config;
+            
         }
         public DbSet<Product> Products { get; set; }
         

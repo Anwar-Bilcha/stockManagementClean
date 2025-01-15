@@ -8,6 +8,7 @@ C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\De
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.AssemblyInfoInputs.cache
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.AssemblyInfo.cs
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.sourcelink.json
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockMan.38257A6A.Up2Date
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.dll
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\refint\stockManagement.Application.dll
