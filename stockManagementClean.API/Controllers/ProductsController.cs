@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 using stockManagement.Application.Interfaces;
 using stockManagement.Models.Entity;
 using stockManagement.Models.Shared;
@@ -11,6 +11,8 @@ namespace stockManagementClean.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("StockManagementCORSPolicy")]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -38,7 +40,7 @@ namespace stockManagementClean.API.Controllers
                 _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
                 var result= await _productService.CreateProductAsync(productToAdd);
                 return Ok(result);
-            }
+            } 
             return BadRequest(ModelState);
 
         }

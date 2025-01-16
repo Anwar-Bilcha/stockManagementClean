@@ -13,7 +13,8 @@ namespace stockManagement.Models.StockDTO
         public string ProductDescription { get; set; }
         public string ProductCategory { get; set; }
         public bool IsExpiring { get; set; }
-        public DateTime ExpiryDate { get; set; } 
+        public DateTime ExpiryDate { get; set; }
+        public string UnitOfMesaure { get; set; }
         public double Price { get; set; }
         public double Quantity { get; set; }
     }

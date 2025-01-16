@@ -6,48 +6,53 @@ using stockManagementClean.API.Mappers;
 using Serilog.Events;
 using Serilog.Sinks.MSSqlServer;
 using static Serilog.Sinks.MSSqlServer.ColumnOptions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using stockManagementClean.API.Utilities.JwtUtility;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("StockManagementCORSPolicy", policy =>
+    {
+        policy.WithOrigins("https://localhost:7287/") // Allow only this specific origin
+              .WithHeaders("Accept", "Authorization", "x-api-version") // Allow the client to use the listed headers
+              .WithMethods("Get","Post"); // Allow GET, POST, PUT, DELETE, etc.
+    });
 
-// Connection string to StockCleanDB
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin() // Allow any origin
+              .WithHeaders("Accept")
+              .WithMethods("GET");
+    });
+});
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
 
-// Define custom column mappings
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+            ClockSkew = TimeSpan.Zero // Set ClockSkew to zero for better security
+        };
+    });
 
-
-// Configure Serilog
-//Log.Logger = new LoggerConfiguration()
-//    .MinimumLevel.Debug()
-//    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-//    .Enrich.FromLogContext()
-//    .WriteTo.Console()
-//    .WriteTo.MSSqlServer(
-//        connectionString: connectionString,
-//        sinkOptions: new MSSqlServerSinkOptions
-//        {
-//            TableName = "StockManagementLogs",
-//            AutoCreateSqlTable = false // Ensure the table exists
-//        },
-//        columnOptions: new ColumnOptions
-//        {
-//            Store = { StandardColumn.Message, StandardColumn.MessageTemplate, StandardColumn.Level, StandardColumn.TimeStamp, StandardColumn.Exception, StandardColumn.Properties },
-//            AdditionalColumns = new[]
-//    {
-//        // Example: Adding custom columns without conflicting names
-//        //new SqlColumn { ColumnName = "CustomLogLevel", PropertyName = "Level", DataType = System.Data.SqlDbType.NVarChar },
-//        new SqlColumn { ColumnName = "CustomLogProperties", PropertyName = "Properties", DataType = System.Data.SqlDbType.NVarChar }
-//    }
-//        })
-//    .CreateLogger();
-
-//builder.Host.UseSerilog();
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration) // Reads configuration from appsettings.json
     .CreateLogger();
 
 // Add Serilog as the logging provider
 builder.Host.UseSerilog();
-
+builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
 // Add services to the container.
 builder.Services.AddDbContext<StockDbContext>();
@@ -71,7 +76,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 //app.UseSerilogRequestLogging();
-
+app.UseCors("StockManagementCORSPolicy");
+app.UseCors("AllowAnyOrigins");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
