@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "80IfpX6h41k=",
+  "dgSpecHash": "UlmONpIeKcI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\source\\repos\\stockManagementClean\\stockManagementClean.API\\stockManagementClean.API.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\stockManagementRepo\\stockManagementClean\\stockManagementClean.API\\stockManagementClean.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
