@@ -1,0 +1,386 @@
+[2025-01-17 19:04:43] [INF] Starting the application...
+[2025-01-17 19:04:43] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 19:04:44] [INF] Now listening on: https://localhost:7287
+[2025-01-17 19:04:44] [INF] Now listening on: http://localhost:5271
+[2025-01-17 19:04:44] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 19:04:44] [INF] Hosting environment: Development
+[2025-01-17 19:04:44] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 19:04:44] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 19:04:44] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 262.2974ms
+[2025-01-17 19:04:44] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 19:04:44] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 6.2114ms
+[2025-01-17 19:04:44] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 19:04:44] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.0073ms
+[2025-01-17 19:04:44] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 19:04:44] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.967ms
+[2025-01-17 19:04:54] [INF] Request starting HTTP/2 GET https://localhost:7287/api/Auth?username=Anwar%20Bilcha - null null
+[2025-01-17 19:04:54] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 19:04:54] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 19:04:54] [INF] Custom Log: User ID Anwar Bilcha performed Generate Token at "2025-01-17T16:04:54.4756004Z"
+[2025-01-17 19:04:54] [INF] Executing OkObjectResult, writing value of type 'System.String'.
+[2025-01-17 19:04:54] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 42.8063ms
+[2025-01-17 19:04:54] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 19:04:54] [INF] Request finished HTTP/2 GET https://localhost:7287/api/Auth?username=Anwar%20Bilcha - 200 null text/plain; charset=utf-8 66.822ms
+[2025-01-17 19:20:28] [INF] Starting the application...
+[2025-01-17 19:20:28] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 19:20:28] [INF] Now listening on: https://localhost:7287
+[2025-01-17 19:20:28] [INF] Now listening on: http://localhost:5271
+[2025-01-17 19:20:28] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 19:20:28] [INF] Hosting environment: Development
+[2025-01-17 19:20:28] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 19:20:28] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 19:20:29] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 274.3717ms
+[2025-01-17 19:20:29] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 19:20:29] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 19:20:29] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 4.8161ms
+[2025-01-17 19:20:29] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.8331ms
+[2025-01-17 19:20:29] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 19:20:29] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.4215ms
+[2025-01-17 19:23:10] [INF] Starting the application...
+[2025-01-17 19:23:10] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 19:23:10] [INF] Now listening on: https://localhost:7287
+[2025-01-17 19:23:10] [INF] Now listening on: http://localhost:5271
+[2025-01-17 19:23:10] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 19:23:10] [INF] Hosting environment: Development
+[2025-01-17 19:23:10] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 19:23:11] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 19:23:11] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 344.5837ms
+[2025-01-17 19:23:11] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 19:23:11] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 4.9806ms
+[2025-01-17 19:23:11] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 19:23:11] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.1042ms
+[2025-01-17 19:23:12] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 19:23:12] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.0333ms
+[2025-01-17 19:23:22] [INF] Request starting HTTP/2 GET https://localhost:7287/api/Auth?username=Anwar - null null
+[2025-01-17 19:23:22] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 19:23:22] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 19:23:22] [INF] Incoming Request: GET /api/Auth
+[2025-01-17 19:23:28] [INF] Outgoing Response: Status Code 200
+[2025-01-17 19:23:28] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 6501.1927ms
+[2025-01-17 19:23:28] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 19:23:28] [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Logging.LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)
+   at Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)
+   at stockManagementClean.API.Controllers.AuthController.Get(String username) in C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API\Controllers\AuthController.cs:line 25
+   at lambda_method5(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-01-17 19:23:28] [INF] Request finished HTTP/2 GET https://localhost:7287/api/Auth?username=Anwar - 500 null text/plain; charset=utf-8 6579.979ms
+[2025-01-17 19:23:47] [INF] Request starting HTTP/2 GET https://localhost:7287/api/Products?id=34 - null null
+[2025-01-17 19:23:48] [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-01-17 19:23:48] [INF] AuthenticationScheme: Bearer was challenged.
+[2025-01-17 19:23:48] [INF] Request finished HTTP/2 GET https://localhost:7287/api/Products?id=34 - 401 0 null 37.2541ms
+[2025-01-17 20:02:27] [INF] Starting the application...
+[2025-01-17 20:02:27] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:02:27] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:02:27] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:02:27] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 20:02:27] [INF] Hosting environment: Development
+[2025-01-17 20:02:27] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 20:02:28] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 20:02:28] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 251.5046ms
+[2025-01-17 20:02:28] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 20:02:28] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 3.7937ms
+[2025-01-17 20:02:28] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 20:02:28] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.1095ms
+[2025-01-17 20:02:28] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 20:02:28] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.205ms
+[2025-01-17 20:02:43] [INF] Request starting HTTP/2 GET https://localhost:7287/api/Auth?username=Mohammed%20Hassen - null null
+[2025-01-17 20:02:43] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:02:43] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 20:02:43] [INF] Incoming Request: GET /api/Auth
+[2025-01-17 20:02:46] [INF] Operation stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) Successful
+[2025-01-17 20:02:46] [INF] Outgoing Response: Status Code 200
+[2025-01-17 20:02:46] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 2878.9243ms
+[2025-01-17 20:02:46] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:02:46] [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Logging.LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)
+   at Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)
+   at stockManagementClean.API.Controllers.AuthController.Get(String username) in C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API\Controllers\AuthController.cs:line 25
+   at lambda_method6(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-01-17 20:02:46] [INF] Request finished HTTP/2 GET https://localhost:7287/api/Auth?username=Mohammed%20Hassen - 500 null text/plain; charset=utf-8 2948.0448ms
+[2025-01-17 20:05:09] [INF] Request starting HTTP/1.1 POST https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:05:09] [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:05:09 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+[2025-01-17 20:05:09] [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:05:09 PM'.
+[2025-01-17 20:05:09] [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-01-17 20:05:09] [INF] AuthenticationScheme: Bearer was challenged.
+[2025-01-17 20:05:09] [INF] Request finished HTTP/1.1 POST https://localhost:7287/api/Products - 401 0 null 47.5777ms
+[2025-01-17 20:05:22] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Auth - application/json 219
+[2025-01-17 20:05:22] [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:05:22 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+[2025-01-17 20:05:22] [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:05:22 PM'.
+[2025-01-17 20:05:22] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:05:22] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 20:05:23] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:05:23] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 43.4864ms
+[2025-01-17 20:05:23] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:05:23] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Auth - 400 null application/problem+json; charset=utf-8 46.1589ms
+[2025-01-17 20:06:03] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Auth?username=Anwar - application/json 219
+[2025-01-17 20:06:03] [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:06:03 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+[2025-01-17 20:06:03] [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:06:03 PM'.
+[2025-01-17 20:06:03] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:06:03] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 20:06:03] [INF] Incoming Request: GET /api/Auth
+[2025-01-17 20:06:06] [INF] Operation stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) Successful
+[2025-01-17 20:06:06] [INF] Outgoing Response: Status Code 200
+[2025-01-17 20:06:06] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 3049.8053ms
+[2025-01-17 20:06:06] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:06:06] [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Logging.LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)
+   at Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)
+   at stockManagementClean.API.Controllers.AuthController.Get(String username) in C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API\Controllers\AuthController.cs:line 25
+   at lambda_method6(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-01-17 20:06:06] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Auth?username=Anwar - 500 null text/plain; charset=utf-8 3055.8414ms
+[2025-01-17 20:07:13] [INF] Starting the application...
+[2025-01-17 20:07:13] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:07:13] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:07:13] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:07:13] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 20:07:13] [INF] Hosting environment: Development
+[2025-01-17 20:07:13] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 20:07:14] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 20:07:14] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 293.6798ms
+[2025-01-17 20:07:14] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 20:07:14] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 3.5607ms
+[2025-01-17 20:07:14] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 20:07:14] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.0164ms
+[2025-01-17 20:07:14] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 20:07:14] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.0408ms
+[2025-01-17 20:07:18] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Auth?username=Anwar - application/json 219
+[2025-01-17 20:07:19] [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:07:19 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+[2025-01-17 20:07:19] [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:07:19 PM'.
+[2025-01-17 20:07:19] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:07:19] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 20:07:19] [INF] Incoming Request: GET /api/Auth
+[2025-01-17 20:07:23] [INF] Operation stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) Successful
+[2025-01-17 20:07:23] [INF] Outgoing Response: Status Code 200
+[2025-01-17 20:07:23] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 4436.8348ms
+[2025-01-17 20:07:23] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:07:23] [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'logger')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.Logging.LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)
+   at Microsoft.Extensions.Logging.LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)
+   at stockManagementClean.API.Controllers.AuthController.Get(String username) in C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API\Controllers\AuthController.cs:line 25
+   at lambda_method6(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-01-17 20:07:23] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Auth?username=Anwar - 500 null text/plain; charset=utf-8 4563.2414ms
+[2025-01-17 20:07:45] [INF] Starting the application...
+[2025-01-17 20:07:45] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:07:45] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:07:45] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:07:45] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 20:07:45] [INF] Hosting environment: Development
+[2025-01-17 20:07:45] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 20:07:46] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 20:07:46] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 288.1786ms
+[2025-01-17 20:07:46] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 20:07:46] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 2.9952ms
+[2025-01-17 20:07:46] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 20:07:46] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.1283ms
+[2025-01-17 20:07:46] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 20:07:46] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.4589ms
+[2025-01-17 20:07:46] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Auth?username=Anwar - application/json 219
+[2025-01-17 20:07:46] [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:07:46 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+[2025-01-17 20:07:46] [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/16/2025 8:01:02 PM', Current time (UTC): '1/17/2025 5:07:46 PM'.
+[2025-01-17 20:07:46] [INF] Executing endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:07:46] [INF] Route matched with {action = "Get", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller stockManagementClean.API.Controllers.AuthController (stockManagementClean.API).
+[2025-01-17 20:07:46] [INF] Incoming Request: GET /api/Auth
+[2025-01-17 20:07:46] [INF] Operation stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) Successful
+[2025-01-17 20:07:46] [INF] Outgoing Response: Status Code 200
+[2025-01-17 20:07:46] [INF] Executing OkObjectResult, writing value of type 'System.String'.
+[2025-01-17 20:07:46] [INF] Executed action stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API) in 32.4376ms
+[2025-01-17 20:07:46] [INF] Executed endpoint 'stockManagementClean.API.Controllers.AuthController.Get (stockManagementClean.API)'
+[2025-01-17 20:07:46] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Auth?username=Anwar - 200 null text/plain; charset=utf-8 151.3024ms
+[2025-01-17 20:08:03] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:08:03] [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API)'
+[2025-01-17 20:08:03] [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature stockManagement.Models.Shared.ApiResponse`1[stockManagement.Models.Entity.Product] GetProduct(System.String) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+[2025-01-17 20:08:03] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:08:03] [INF] Executed action stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API) in 206.251ms
+[2025-01-17 20:08:03] [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API)'
+[2025-01-17 20:08:03] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Products - 400 null application/problem+json; charset=utf-8 221.7415ms
+[2025-01-17 20:08:16] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:08:16] [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API)'
+[2025-01-17 20:08:16] [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature stockManagement.Models.Shared.ApiResponse`1[stockManagement.Models.Entity.Product] GetProduct(System.String) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+[2025-01-17 20:08:16] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:08:16] [INF] Executed action stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API) in 7.1561ms
+[2025-01-17 20:08:16] [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API)'
+[2025-01-17 20:08:16] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Products - 400 null application/problem+json; charset=utf-8 14.1594ms
+[2025-01-17 20:09:15] [INF] Starting the application...
+[2025-01-17 20:09:15] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:09:15] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:09:15] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:09:46] [INF] Starting the application...
+[2025-01-17 20:09:46] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:09:46] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:09:46] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:09:46] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 20:09:46] [INF] Hosting environment: Development
+[2025-01-17 20:09:46] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 20:09:47] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 20:09:47] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 247.3111ms
+[2025-01-17 20:09:47] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 20:09:47] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 3.4635ms
+[2025-01-17 20:09:47] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 20:09:47] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7821ms
+[2025-01-17 20:09:47] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 20:09:47] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.6005ms
+[2025-01-17 20:09:51] [INF] Request starting HTTP/1.1 GET https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:09:52] [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API)'
+[2025-01-17 20:09:52] [INF] Route matched with {action = "GetProduct", controller = "Products"}. Executing controller action with signature stockManagement.Models.Shared.ApiResponse`1[stockManagement.Models.Entity.Product] GetProduct(System.String) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+[2025-01-17 20:09:52] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:09:52] [INF] Executed action stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API) in 210.2805ms
+[2025-01-17 20:09:52] [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.GetProduct (stockManagementClean.API)'
+[2025-01-17 20:09:52] [INF] Request finished HTTP/1.1 GET https://localhost:7287/api/Products - 400 null application/problem+json; charset=utf-8 291.6472ms
+[2025-01-17 20:11:16] [INF] Request starting HTTP/1.1 POST https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:11:16] [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+[2025-01-17 20:11:16] [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(stockManagement.Models.StockDTO.ProductCreaUpdReqDTO) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+[2025-01-17 20:11:16] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:11:16] [INF] Executed action stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API) in 29.3821ms
+[2025-01-17 20:11:16] [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+[2025-01-17 20:11:16] [INF] Request finished HTTP/1.1 POST https://localhost:7287/api/Products - 400 null application/problem+json; charset=utf-8 42.5242ms
+[2025-01-17 20:40:56] [INF] Starting the application...
+[2025-01-17 20:40:56] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:40:56] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:40:56] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:40:56] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 20:40:56] [INF] Hosting environment: Development
+[2025-01-17 20:40:56] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 20:40:56] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 20:40:57] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 254.3238ms
+[2025-01-17 20:40:57] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 20:40:57] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 5.5126ms
+[2025-01-17 20:40:57] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 20:40:57] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.6159ms
+[2025-01-17 20:40:57] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 20:40:57] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.6319ms
+[2025-01-17 20:40:58] [INF] Request starting HTTP/1.1 POST https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:40:58] [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+[2025-01-17 20:40:58] [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(stockManagement.Models.StockDTO.ProductCreaUpdReqDTO) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+[2025-01-17 20:40:58] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:40:58] [INF] Executed action stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API) in 209.6085ms
+[2025-01-17 20:40:58] [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+[2025-01-17 20:40:58] [INF] Request finished HTTP/1.1 POST https://localhost:7287/api/Products - 400 null application/problem+json; charset=utf-8 285.263ms
+[2025-01-17 20:44:00] [INF] Starting the application...
+[2025-01-17 20:44:00] [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-01-17 20:44:00] [INF] Now listening on: https://localhost:7287
+[2025-01-17 20:44:00] [INF] Now listening on: http://localhost:5271
+[2025-01-17 20:44:00] [INF] Application started. Press Ctrl+C to shut down.
+[2025-01-17 20:44:00] [INF] Hosting environment: Development
+[2025-01-17 20:44:00] [INF] Content root path: C:\Users\hp\source\repos\stockManagementClean\stockManagementClean.API
+[2025-01-17 20:44:01] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/index.html - null null
+[2025-01-17 20:44:01] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/index.html - 200 null text/html;charset=utf-8 298.3343ms
+[2025-01-17 20:44:01] [INF] Request starting HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - null null
+[2025-01-17 20:44:01] [INF] Request finished HTTP/2 GET https://localhost:7287/_framework/aspnetcore-browser-refresh.js - 200 13800 application/javascript; charset=utf-8 4.2367ms
+[2025-01-17 20:44:01] [INF] Request starting HTTP/2 GET https://localhost:7287/_vs/browserLink - null null
+[2025-01-17 20:44:01] [INF] Request finished HTTP/2 GET https://localhost:7287/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.7666ms
+[2025-01-17 20:44:01] [INF] Request starting HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - null null
+[2025-01-17 20:44:01] [INF] Request finished HTTP/2 GET https://localhost:7287/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.2389ms
+[2025-01-17 20:44:08] [INF] Request starting HTTP/1.1 POST https://localhost:7287/api/Products - application/json 219
+[2025-01-17 20:44:08] [INF] Executing endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+[2025-01-17 20:44:08] [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(stockManagement.Models.StockDTO.ProductCreaUpdReqDTO) on controller stockManagementClean.API.Controllers.ProductsController (stockManagementClean.API).
+[2025-01-17 20:44:08] [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-01-17 20:44:08] [INF] Executed action stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API) in 293.2506ms
+[2025-01-17 20:44:08] [INF] Executed endpoint 'stockManagementClean.API.Controllers.ProductsController.CreateProduct (stockManagementClean.API)'
+[2025-01-17 20:44:08] [INF] Request finished HTTP/1.1 POST https://localhost:7287/api/Products - 400 null application/problem+json; charset=utf-8 407.042ms

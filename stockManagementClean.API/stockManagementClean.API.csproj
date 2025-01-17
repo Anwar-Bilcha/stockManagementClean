@@ -27,4 +27,8 @@
     <ProjectReference Include="..\stockManagement.Infrastructure\stockManagement.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

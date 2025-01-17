@@ -6,6 +6,7 @@ using stockManagement.Application.Interfaces;
 using stockManagement.Models.Entity;
 using stockManagement.Models.Shared;
 using stockManagement.Models.StockDTO;
+using stockManagementClean.API.Utilities;
 
 namespace stockManagementClean.API.Controllers
 {
@@ -13,31 +14,34 @@ namespace stockManagementClean.API.Controllers
     [ApiController]
     [EnableCors("StockManagementCORSPolicy")]
     [Authorize]
+    [GlobalModelValidator]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
         private readonly IMapper _mapper;
         private readonly ILogger<ProductsController> _logger;
-        public ProductsController(IProductService productService, IMapper mapper, ILogger<ProductsController> logger)
+        public ProductsController(IProductService productService, IMapper mapper)
         {
             _productService = productService;
             _mapper = mapper;
-            _logger = logger;
+           // _logger = logger;
         }
         [HttpGet]
         public ApiResponse<Product> GetProduct(string id) {
         return _productService.GetProduct(id);
         }
+        
         [HttpPost]
+        [GlobalModelValidator]
         public async Task<IActionResult> CreateProduct([FromBody]ProductCreaUpdReqDTO product)
         {
-            _logger.LogInformation("This is from Serilog");
-            _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
+           // _logger.LogInformation("This is from Serilog");
+            //_logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
             if (ModelState.IsValid)
             {
                 var productToAdd = _mapper.Map<Product>(product);
-                _logger.LogInformation("This is from Serilog");
-                _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
+              //  _logger.LogInformation("This is from Serilog");
+                //_logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
                 var result= await _productService.CreateProductAsync(productToAdd);
                 return Ok(result);
             } 

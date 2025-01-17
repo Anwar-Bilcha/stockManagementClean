@@ -10,8 +10,28 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using stockManagementClean.API.Utilities.JwtUtility;
+using Microsoft.Extensions.Logging;
+using stockManagementClean.API.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File(
+        path: "Logs/log-.txt",
+        rollingInterval: RollingInterval.Day,
+        outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss}] [{Level:u3}] {Message:lj}{NewLine}{Exception}"
+    )
+    .CreateLogger();
+
+// Replace the default logging provider with Serilog
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog();
+
+
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("StockManagementCORSPolicy", policy =>
@@ -46,18 +66,23 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration) // Reads configuration from appsettings.json
-    .CreateLogger();
+//Log.Logger = new LoggerConfiguration()
+//    .ReadFrom.Configuration(builder.Configuration.GetSection("Serilog")) // Reads configuration from appsettings.json
+//    .CreateLogger();
 
 // Add Serilog as the logging provider
 builder.Host.UseSerilog();
 builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
+
 // Add services to the container.
 builder.Services.AddDbContext<StockDbContext>();
 builder.Services.AddTransient<IProductService, ProductService>();
-builder.Services.AddControllers();
+builder.Services.AddControllers(options => {
+    options.Filters.Add<GlobalLoggingFilter>();
+ }
+);
+builder.Services.AddSingleton<GlobalModelValidator>();
 //Log.Logger = new LoggerConfiguration()
 //    .WriteTo.File("Logs/StockLog-{Date}.txt", rollingInterval: RollingInterval.Day)
 //    .CreateLogger();
