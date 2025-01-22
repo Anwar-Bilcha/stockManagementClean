@@ -13,3 +13,4 @@ C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\De
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\refint\stockManagement.Application.dll
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.pdb
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\ref\stockManagement.Application.dll
+C:\Users\hp\source\repos\stockManagementClean\stockManagement.Application\obj\Debug\net8.0\stockManagement.Application.sourcelink.json

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using stockManagement.Application.Interfaces;
@@ -9,6 +10,7 @@ namespace stockManagementClean.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("StockCorsPolicy")]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;

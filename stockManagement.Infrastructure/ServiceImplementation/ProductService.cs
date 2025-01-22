@@ -45,7 +45,10 @@ namespace stockManagement.Infrastructure.ServiceImplementation
 
         ApiResponse<Product> IProductService.GetProduct(string productId)
         {
-            throw new NotImplementedException();
+            ApiResponse<Product> apiResponse = new();
+            var result = _context.Products.Find(productId);
+            apiResponse.Data = result;
+            return apiResponse;
         }
 
         ApiResponse<List<Product>> IProductService.GetProducts()

@@ -21,6 +21,7 @@ namespace stockManagement.Infrastructure
             _configuration = config;
         }
         public DbSet<Product> Products { get; set; }
-        
+        public DbSet<Users> Users { get; set; }
+
     }
 }

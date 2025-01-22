@@ -17,3 +17,4 @@ C:\Users\hp\source\repos\stockManagementClean\stockManagement.Infrastructure\obj
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Infrastructure\obj\Debug\net8.0\stockManagement.Infrastructure.pdb
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Infrastructure\obj\Debug\net8.0\stockManagement.Infrastructure.genruntimeconfig.cache
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Infrastructure\obj\Debug\net8.0\ref\stockManagement.Infrastructure.dll
+C:\Users\hp\source\repos\stockManagementClean\stockManagement.Infrastructure\obj\Debug\net8.0\stockManagement.Infrastructure.sourcelink.json

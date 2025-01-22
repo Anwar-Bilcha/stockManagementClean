@@ -9,3 +9,4 @@ C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\n
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\refint\stockManagement.Models.dll
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.pdb
 C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\ref\stockManagement.Models.dll
+C:\Users\hp\source\repos\stockManagementClean\stockManagement.Models\obj\Debug\net8.0\stockManagement.Models.sourcelink.json
