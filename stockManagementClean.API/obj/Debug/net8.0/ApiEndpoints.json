@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "stockManagementClean.API.Controllers.UsersController",
+    "Method": "CreateBulkUser",
+    "RelativePath": "bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "System.Collections.Generic.List\u00601[[stockManagement.Models.StockDTO.UsersDTO.AddUpdateUserRequestDTO, stockManagement.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "stockManagementClean.API.Controllers.UsersController",
     "Method": "GetUser",
     "RelativePath": "Users",
     "HttpMethod": "GET",
@@ -68,6 +84,38 @@
       {
         "Name": "userdto",
         "Type": "stockManagement.Models.StockDTO.UsersDTO.AddUpdateUserRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "stockManagementClean.API.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "Users",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "stockManagement.Models.StockDTO.UsersDTO.AddUpdateUserRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "stockManagementClean.API.Controllers.UsersController",
+    "Method": "UpDateUser",
+    "RelativePath": "Users",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "stockManagement.Models.StockDTO.UsersDTO.AddCreateUsersResponse",
         "IsRequired": true
       }
     ],

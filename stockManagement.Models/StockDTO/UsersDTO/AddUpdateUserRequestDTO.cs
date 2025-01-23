@@ -10,8 +10,6 @@ namespace stockManagement.Models.StockDTO.UsersDTO
     public class AddUpdateUserRequestDTO
     {
         public string UserName { get; set; }
-        [Required]
-        [MinLength(8, ErrorMessage = "The Maximum Allowed Length for Password is 8")]
         public string Password { get; set; }
     }
 }

@@ -89,7 +89,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
             ApiResponse<Users> apiResponse = new();
             // var result = _context.Users.Find(username);
             var res = _context.Users.Find(username);
-            if (res != null)
+            if (res == null)
             {
                 apiResponse.errorMessage = $"No Such User with Provided {nameof(username)} {username} is found in the table.";
                 apiResponse.isSuccessfullyCompleted = false;

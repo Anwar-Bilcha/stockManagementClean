@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -19,10 +20,12 @@ namespace stockManagementClean.API.Controllers
             _productService = productService;
         }
         [HttpGet]
+        [Authorize]
         public ApiResponse<Product> GetProduct(string id) {
         return _productService.GetProduct(id);
         }
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> CreateProduct([FromBody] Product product)
         {
             if (ModelState.IsValid)
