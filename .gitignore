@@ -1,10 +1,4 @@
 .vs/
-stockManagementClean.API/bin/
-stockManagementClean.Application/bin/
-stockManagementClean.Model/bin/
-stockManagementClean.Infrastructure/bin/
-stockManagementClean.API/obj/
-stockManagementClean.Application/obj/
-stockManagementClean.Model/obj/
-stockManagementClean.Infrastructure/obj/
+**/bin/
+**/obj
 
