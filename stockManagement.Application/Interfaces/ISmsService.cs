@@ -8,6 +8,6 @@ namespace stockManagement.Application.Interfaces
 {
     public interface ISmsService
     {
-        Task SendSmsAsync(string phoneNumber, string message);
+    Task SendSmsAsync(string phoneNumber, string message);
     }
 }

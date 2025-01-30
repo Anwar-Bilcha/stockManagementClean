@@ -57,11 +57,13 @@ builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
 // Add services to the container.
 builder.Services.AddDbContext<StockDbContext>();
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
+
 
 // Register services
 builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<ISmsService, TwilioSmsService>(); 
+builder.Services.AddScoped<ISmsService, TwilioSmsService>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ProductRegisteredEventHandler).Assembly));
 builder.Services.AddControllers();
 //Log.Logger = new LoggerConfiguration()
 //    .WriteTo.File("Logs/StockLog-{Date}.txt", rollingInterval: RollingInterval.Day)

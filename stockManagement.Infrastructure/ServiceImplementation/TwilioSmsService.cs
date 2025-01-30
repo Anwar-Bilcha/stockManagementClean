@@ -1,40 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Twilio;
+﻿using Twilio;
 using Twilio.Rest.Api.V2010.Account;
-using Microsoft.Extensions.Configuration;
+using System;
 using System.Threading.Tasks;
 using stockManagement.Application.Interfaces;
 using stockManagementClean.API.Utilities;
-namespace stockManagement.Infrastructure.ServiceImplementation
+
+public class TwilioSmsService : ISmsService
 {
-    
-
-    public class TwilioSmsService : ISmsService
+    public async Task SendSmsAsync(string phoneNumber, string message)
     {
-        private readonly IConfiguration _configuration;
-
-        public TwilioSmsService(IConfiguration configuration)
+        try
         {
-            _configuration = configuration;
-        }
+            TwilioClient.Init(TwilioConfigurations.AccountSid, TwilioConfigurations.AuthToken);
 
-        public async Task SendSmsAsync(string phoneNumber, string message)
-        {
-            string accountSid = TwilioConfigurations.AccountSid;
-            var authToken = TwilioConfigurations.AuthToken;
-            var fromPhoneNumber = TwilioConfigurations.FromNumber;
-
-            TwilioClient.Init(accountSid, authToken);
-
-            await MessageResource.CreateAsync(
+            var result = await MessageResource.CreateAsync(
                 body: message,
-                from: new Twilio.Types.PhoneNumber(fromPhoneNumber),
-                to: new Twilio.Types.PhoneNumber(TwilioConfigurations.OwnersNumber)
+                from: new Twilio.Types.PhoneNumber(TwilioConfigurations.FromNumber),
+                to: new Twilio.Types.PhoneNumber(phoneNumber)
             );
+
+            Console.WriteLine($"🔹 SMS Sent Successfully: {result.Sid}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ SMS Sending Failed: {ex.Message}");
         }
     }
 }

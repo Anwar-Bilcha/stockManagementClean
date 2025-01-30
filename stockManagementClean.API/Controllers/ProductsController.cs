@@ -31,14 +31,13 @@ namespace stockManagementClean.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromBody]ProductCreaUpdReqDTO product, CancellationToken cancellationToken)
         {
-            _logger.LogInformation("This is from Serilog");
             _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
             if (ModelState.IsValid)
             {
                 var productToAdd = _mapper.Map<Product>(product);
-                _logger.LogInformation("This is from Serilog");
-                _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
                 var result= await _productService.CreateProductAsync(productToAdd, cancellationToken);
+                _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
+
                 return Ok(result);
             } 
             return BadRequest(ModelState);

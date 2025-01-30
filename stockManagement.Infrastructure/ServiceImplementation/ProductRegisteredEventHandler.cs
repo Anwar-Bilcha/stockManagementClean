@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using MediatR;
 using stockManagement.Application.Interfaces;
 using stockManagement.Models.Entity;
+using System.Threading;
+using System.Threading.Tasks;
+
 
 namespace stockManagement.Infrastructure.ServiceImplementation
 {
@@ -17,11 +19,12 @@ namespace stockManagement.Infrastructure.ServiceImplementation
         {
             _smsService = smsService;
         }
-
         public async Task Handle(ProductRegisteredEvent notification, CancellationToken cancellationToken)
         {
+            Console.WriteLine($"Sending SMS for {notification.ProductName} to {notification.OwnerPhoneNumber}");
             var message = $"New product '{notification.ProductName}' has been registered.";
             await _smsService.SendSmsAsync(notification.OwnerPhoneNumber, message);
+            Console.WriteLine("SMS sent (or attempted). Check Twilio logs.");
         }
     }
 }

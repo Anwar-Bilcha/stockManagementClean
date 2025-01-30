@@ -13,7 +13,7 @@ namespace stockManagement.Application.Interfaces
         ApiResponse<Product> GetProduct(string productId);
         ApiResponse<List<Product>> GetProducts();
         Task<ApiResponse<Product>> UpdateProductAsync(Product product);
-        Task<ApiResponse<Product>> CreateProductAsync(Product product, CancellationToken cancellationToken=default);
+        Task<ApiResponse<Product>> CreateProductAsync(Product product, CancellationToken cancellationToken);
         Task<ApiResponse<Product>> DeleteProductAsync(Product product);
         
     }

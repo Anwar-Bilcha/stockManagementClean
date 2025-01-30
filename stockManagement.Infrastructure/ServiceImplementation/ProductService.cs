@@ -1,7 +1,9 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Logging;
 using stockManagement.Application.Interfaces;
 using stockManagement.Models.Entity;
 using stockManagement.Models.Shared;
+using stockManagementClean.API.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +15,13 @@ namespace stockManagement.Infrastructure.ServiceImplementation
     public class ProductService : IProductService
     {
         private readonly StockDbContext _context;
-        private readonly IPublisher _publisher;
+        private readonly IMediator _publisher;
+        private readonly ILogger<ProductService> _logger;
 
-        public ProductService(StockDbContext context, IPublisher publisher) {
+        public ProductService(StockDbContext context, IMediator publisher, ILogger<ProductService> logger) {
         _context = context;
-            _publisher = publisher;
+        _publisher = publisher;
+        _logger = logger;
         }
         async Task<ApiResponse<Product>> IProductService.CreateProductAsync(Product product, CancellationToken cancellationToken = default)
         {
@@ -30,7 +34,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
                 userResult.errorMessage = "";
                 userResult.isSuccessfullyCompleted = true;
                 userResult.Data = product;
-                await _publisher.Publish(new ProductRegisteredEvent(product.ProductName, "+251975087089"), cancellationToken);
+                await _publisher.Publish<ProductRegisteredEvent>(new ProductRegisteredEvent(product.ProductName, TwilioConfigurations.OwnersNumber), cancellationToken);
                 return userResult;
             }
             catch (Exception ex)
