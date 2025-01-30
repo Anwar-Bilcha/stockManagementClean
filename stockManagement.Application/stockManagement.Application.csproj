@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Twilio" Version="7.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\stockManagement.Models\stockManagement.Models.csproj" />
   </ItemGroup>
 

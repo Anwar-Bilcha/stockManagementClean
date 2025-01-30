@@ -29,7 +29,7 @@ namespace stockManagementClean.API.Controllers
         return _productService.GetProduct(id);
         }
         [HttpPost]
-        public async Task<IActionResult> CreateProduct([FromBody]ProductCreaUpdReqDTO product)
+        public async Task<IActionResult> CreateProduct([FromBody]ProductCreaUpdReqDTO product, CancellationToken cancellationToken)
         {
             _logger.LogInformation("This is from Serilog");
             _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
@@ -38,7 +38,7 @@ namespace stockManagementClean.API.Controllers
                 var productToAdd = _mapper.Map<Product>(product);
                 _logger.LogInformation("This is from Serilog");
                 _logger.LogError($"{product.ProductName} is being registered that Expires on {product.ExpiryDate} ");
-                var result= await _productService.CreateProductAsync(productToAdd);
+                var result= await _productService.CreateProductAsync(productToAdd, cancellationToken);
                 return Ok(result);
             } 
             return BadRequest(ModelState);

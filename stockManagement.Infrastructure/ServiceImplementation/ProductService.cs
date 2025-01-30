@@ -1,4 +1,5 @@
-﻿using stockManagement.Application.Interfaces;
+﻿using MediatR;
+using stockManagement.Application.Interfaces;
 using stockManagement.Models.Entity;
 using stockManagement.Models.Shared;
 using System;
@@ -12,10 +13,13 @@ namespace stockManagement.Infrastructure.ServiceImplementation
     public class ProductService : IProductService
     {
         private readonly StockDbContext _context;
-        public ProductService(StockDbContext context) {
+        private readonly IPublisher _publisher;
+
+        public ProductService(StockDbContext context, IPublisher publisher) {
         _context = context;
+            _publisher = publisher;
         }
-        async Task<ApiResponse<Product>> IProductService.CreateProductAsync(Product product)
+        async Task<ApiResponse<Product>> IProductService.CreateProductAsync(Product product, CancellationToken cancellationToken = default)
         {
             ApiResponse<Product> userResult = new();
             try
@@ -26,6 +30,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
                 userResult.errorMessage = "";
                 userResult.isSuccessfullyCompleted = true;
                 userResult.Data = product;
+                await _publisher.Publish(new ProductRegisteredEvent(product.ProductName, "+251975087089"), cancellationToken);
                 return userResult;
             }
             catch (Exception ex)
