@@ -12,11 +12,12 @@ namespace stockManagement.Models.Entity
     {
         public string ProductName { get; }
         public string OwnerPhoneNumber { get; }
-
-        public ProductRegisteredEvent(string productName, string ownerPhoneNumber)
+        public string UserName { get; set; }
+        public ProductRegisteredEvent(string productName, string ownerPhoneNumber, string userName)
         {
             ProductName = productName;
             OwnerPhoneNumber = ownerPhoneNumber;
+            UserName = userName;
         }
     }
 }

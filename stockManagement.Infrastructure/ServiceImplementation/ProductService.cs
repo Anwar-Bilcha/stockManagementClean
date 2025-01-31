@@ -34,7 +34,6 @@ namespace stockManagement.Infrastructure.ServiceImplementation
                 userResult.errorMessage = "";
                 userResult.isSuccessfullyCompleted = true;
                 userResult.Data = product;
-                await _publisher.Publish<ProductRegisteredEvent>(new ProductRegisteredEvent(product.ProductName, TwilioConfigurations.OwnersNumber), cancellationToken);
                 return userResult;
             }
             catch (Exception ex)

@@ -22,7 +22,7 @@ namespace stockManagement.Infrastructure.ServiceImplementation
         public async Task Handle(ProductRegisteredEvent notification, CancellationToken cancellationToken)
         {
             Console.WriteLine($"Sending SMS for {notification.ProductName} to {notification.OwnerPhoneNumber}");
-            var message = $"New product '{notification.ProductName}' has been registered.";
+            var message = $"'{notification.UserName.ToUpper()}' Has registered a new product '{notification.ProductName.ToUpper()}' at '{DateTime.Now.ToShortDateString()}'.";
             await _smsService.SendSmsAsync(notification.OwnerPhoneNumber, message);
             Console.WriteLine("SMS sent (or attempted). Check Twilio logs.");
         }

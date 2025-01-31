@@ -57,9 +57,6 @@ builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
 // Add services to the container.
 builder.Services.AddDbContext<StockDbContext>();
-
-
-
 // Register services
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ISmsService, TwilioSmsService>();
