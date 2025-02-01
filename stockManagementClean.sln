@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stockManagement.Application
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stockManagement.Infrastructure", "stockManagement.Infrastructure\stockManagement.Infrastructure.csproj", "{512D4DC9-389F-48D9-8ED5-09CCFFC57984}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stockManagement.XunitTests", "stockManagement.XunitTests\stockManagement.XunitTests.csproj", "{20F18854-FCFC-40DC-B0BD-64D8A90F4EAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{512D4DC9-389F-48D9-8ED5-09CCFFC57984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{512D4DC9-389F-48D9-8ED5-09CCFFC57984}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{512D4DC9-389F-48D9-8ED5-09CCFFC57984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F18854-FCFC-40DC-B0BD-64D8A90F4EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F18854-FCFC-40DC-B0BD-64D8A90F4EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F18854-FCFC-40DC-B0BD-64D8A90F4EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F18854-FCFC-40DC-B0BD-64D8A90F4EAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
